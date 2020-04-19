@@ -1,7 +1,7 @@
 #!make -f
 
-CXX=clang++-9 
-CXXFLAGS=-std=c++2a
+CXX=g++
+CXXFLAGS=-std=c++17
 
 HEADERS := $(wildcard *.h*)
 STUDENT_SOURCES := $(filter-out $(wildcard Test*.cpp), $(wildcard *.cpp))
